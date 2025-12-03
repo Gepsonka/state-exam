@@ -1,0 +1,132 @@
+\relax 
+\providecommand \babel@aux [2]{\global \let \babel@toc \@gobbletwo }
+\@nameuse{bbl@beforestart}
+\babel@aux{english}{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Information security}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Simmetric Encryption Schemes}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Blockciphers and Stream Ciphers}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data Encryption Standard (DES)}{2}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Two rounds of a Feistel Network structure. Note how $R_{i-1}$ is preserved to become $L_i$, while $L_{i-1}$ is modified by the round function.}}{2}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:feistel}{{1}{2}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Round Key Generation}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The DES Key Schedule. The 56-bit key state ($C, D$) is rotated left every round. The PC-2 permutation compresses the state to produce the 48-bit round key.}}{4}{}\protected@file@percent }
+\newlabel{fig:key_schedule}{{2}{4}{}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Overview of the Full DES Algorithm. The 64-bit Plaintext undergoes an Initial Permutation, 16 Rounds of processing (each using a unique 48-bit subkey derived from the main 64-bit Key), a final swap, and an Inverse Permutation.}}{5}{}\protected@file@percent }
+\newlabel{fig:full_des}{{3}{5}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Advanced Encryption Standard (AES)}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}1. SubBytes (Substitution)}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces SubBytes: Each byte is replaced individually.}}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}2. ShiftRows (Permutation)}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces ShiftRows: Row 1 is shifted left by 1. Byte '1' wraps around to the end.}}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}3. MixColumns (Diffusion)}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces MixColumns: Each column is transformed linearly.}}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}4. AddRoundKey (Key Mixing)}{7}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces AddRoundKey: The internal State is XORed with the Round Key.}}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Expansion Algorithm}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}The $g()$ Function}{7}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Rcon values for each round (only affects the first byte of the word).}}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Key Expansion Logic (for indices $i$ multiple of 4).}}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Complete Process}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces AES Execution Flow.}}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}AES modes}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}ECB (Electronic Codebook)}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}CBC (Cipher Block Chaining)}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Cipher Block Chaining (CBC) Mode.}}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}CTR (Counter Mode)}{10}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Counter (CTR) Mode.}}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}GCM (Galois/Counter Mode)}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Block ciphers vs Stream ciphers}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Block Ciphers}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Block Cipher Concept: Transforming a whole chunk at once.}}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Stream Ciphers}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Stream Cipher Concept: XORing data with a running keystream.}}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Comparison Summary}{12}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Key differences between Block and Stream ciphers.}}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Assimetric Encryption}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}The RSA Problem}{13}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces The asymmetry of the RSA function.}}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}The Discrete Logarithm Problem (DLP)}{13}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces DLP behaves like determining the number of chaotic jumps on a clock face.}}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}The Elliptic Curve Discrete Logarithm Problem (ECDLP)}{14}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces ECDLP involves finding how many times $P$ was added to itself to reach $Q$.}}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Security Comparison}{15}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Key Size Comparison. Notice how RSA keys must grow explosively to keep up, while ECC keys grow linearly.}}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}RSA Encryption Scheme}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.1}Key Generation}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.2}Encryption}{16}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces RSA Encryption $\mathsf  {Enc}_{pk}(m)$.}}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.3}Decryption}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.4}Correctness Proof}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}ElGamal Encryption}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.1}Key Generation $Gen$}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.2}Encryption $Enc$ (Alice)}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces ElGamal Encryption $\mathsf  {Enc}_{pk}(m)$.}}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.3}Decryption}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Decryption Process. The math works because $(c_1)^x = (g^k)^x = g^{kx} = (g^x)^k = h^k = s$.}}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.4}Correctness Proof}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.5}Example}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Digital Signatures}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}RSA Signature Algorithm}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.1}Key Generation}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.2}Signing Algorithm}{20}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces The Signing Algorithm $\mathsf  {Sign}_{sk}(m)$.}}{21}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.3}Verification Algorithm}{21}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces The Verification Algorithm $\mathsf  {Vrfy}_{pk}(m, \sigma )$.}}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.4}Correctness Proof}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}DSA Signature Scheme}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.1}Key Generation ($\mathsf  {Gen}$)}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.2}Signing Algorithm ($\mathsf  {Sign}$)}{23}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces DSA Signing Process $\mathsf  {Sign}_{sk}(m)$.}}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.3}Verification Algorithm ($\mathsf  {Vrfy}$)}{23}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces DSA Verification Process $\mathsf  {Vrfy}_{pk}(m, \sigma )$.}}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.4}Correctness Proof}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Elliptik Curve Digital Signature ALgorithm Scheme (ECDSA)}{25}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}Formal Definition}{25}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}1. Key Generation ($\mathsf  {Gen}$)}{25}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.0.1}Signing Algorithm ($\mathsf  {Sign}$)}{25}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces ECDSA Signing Process $\mathsf  {Sign}_{sk}(m)$.}}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.0.2}Verification Algorithm ($\mathsf  {Vrfy}$)}{26}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces ECDSA Verification Process $\mathsf  {Vrfy}_{pk}(m, \sigma )$.}}{27}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.0.3}Correctness Proof}{27}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {12}Key excahnge algorithms}{27}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1}RSA Key Transport (Key Exchange)}{27}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.1.1}Setup}{27}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.1.2}Protocol Flow}{28}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces RSA Key Transport Protocol.}}{28}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.2}Diffie-Hellman Key Exchange (DHKE)}{28}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.2.1}Setup}{28}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.2.2}Protocol Flow}{29}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Diffie-Hellman Key Exchange.}}{29}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.2.3}Correctness Proof}{29}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.3}Elliptic Curve Diffie-Hellman (ECDH)}{29}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.3.1}Setup}{29}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.3.2}Protocol Flow}{30}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces ECDH Protocol Flow.}}{30}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.3.3}Correctness Proof}{30}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {13}Cryptographic Hash Functions}{30}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.1}Formal Definition}{30}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.2}The Merkle-Damgård Construction (SHA-2)}{31}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.2.1}Construction Specifications}{31}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Merkle-Damgård Construction. The chaining variable $H_i$ passes the state to the next block.}}{31}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.3}SHA-256 (Specifics)}{31}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Davies-Meyer structure used inside SHA-2.}}{32}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.4}The Sponge Construction (SHA-3 / Keccak)}{32}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.4.1}Construction Specifications}{32}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.4.2}Phases}{32}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces The Sponge Construction. $r$ determines speed, $c$ determines security.}}{32}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.5}Comparison}{33}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Comparison of modern hash standards.}}{33}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {14}SSL/TLS Protocol}{33}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.1}Formal Definition}{33}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.2}The TLS Handshake Protocol}{33}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.3}Protocol Flow (TLS 1.2 Full Handshake)}{33}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces TLS 1.2 Full Handshake with Diffie-Hellman Key Exchange.}}{34}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.4}Key Derivation}{34}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.5}The Pre-Master Secret (PMS)}{35}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {14.5.1}The Master Secret (MS)}{35}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {14.5.2}Session Keys}{35}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.6}The TLS Record Protocol}{35}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces The TLS Record Protocol Processing Stack.}}{36}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.7}Security Services Provided}{36}{}\protected@file@percent }
+\gdef \@abspage@last{36}

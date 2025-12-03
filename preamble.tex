@@ -1,0 +1,72 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb, amsthm} % Matek környezetek
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    margin=2.5cm,
+}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{caption}
+\usetikzlibrary{calc, positioning, arrows.meta, shapes.geometric, fit, matrix}
+
+\tikzset{
+    state/.style={
+        matrix of nodes,
+        nodes={
+            draw=black!50, 
+            minimum size=0.65cm, 
+            anchor=center, 
+            fill=white, 
+            font=\ttfamily\footnotesize
+        },
+        column sep=-\pgflinewidth, 
+        row sep=-\pgflinewidth,
+        draw=black, 
+        thick,
+        inner sep=0pt
+    },
+    process/.style={rectangle, draw=black, thick, fill=white, align=center, minimum width=3.5cm, minimum height=0.8cm},
+    block/.style={rectangle, draw=blue!80!black, thick, fill=blue!5, minimum width=2cm, minimum height=1cm, align=center, font=\bfseries},
+    enc/.style={trapezium, trapezium angle=70, draw=black, thick, fill=gray!10, minimum width=2cm, align=center, shape border rotate=270},
+    xor/.style={circle, draw=black, thick, inner sep=0pt, minimum size=0.4cm, path picture={\draw[thick] (path picture bounding box.north) -- (path picture bounding box.south) (path picture bounding box.west) -- (path picture bounding box.east);}},
+    group/.style={rectangle, draw=gray, dashed, inner sep=0.3cm},
+    arrow/.style={-Latex, thick},
+    label/.style={font=\small\bfseries, color=gray!80!black, align=center},
+    rsaStep/.style={rectangle, draw=black, thick, fill=white, align=center, minimum width=4cm, minimum height=0.8cm, rounded corners},
+    data/.style={rectangle, draw=blue!80!black, thick, fill=blue!5, align=center, minimum width=2.5cm},
+    arrow/.style={-Latex, thick},
+    actor/.style={circle, draw=black, thick, minimum size=1.5cm, fill=gray!10, font=\bfseries},
+    box/.style={rectangle, draw=black, thick, fill=white, align=center, minimum width=2.5cm, minimum height=1.5cm},
+    op/.style={rectangle, draw=black, thick, fill=white, align=center, minimum width=3cm},
+    decision/.style={diamond, draw=orange!80!black, thick, fill=orange!5, aspect=2, align=center, font=\small, inner sep=1pt},
+    term/.style={rectangle, draw=black, thick, fill=gray!20, rounded corners, minimum height=0.8cm},
+    elgamalStep/.style={rectangle, draw=black, thick, fill=white, align=center, minimum width=4cm, minimum height=0.8cm, rounded corners},
+    secret/.style={rectangle, draw=red!80!black, thick, fill=red!10, align=center},
+    public/.style={rectangle, draw=green!60!black, thick, fill=green!10, align=center},
+    random/.style={diamond, draw=orange!80!black, thick, fill=orange!10, aspect=2, inner sep=2pt, font=\small, align=center},
+    sigStep/.style={rectangle, draw=black, thick, fill=white, align=center, minimum width=4cm, minimum height=0.8cm, rounded corners},
+    check/.style={diamond, draw=orange!80!black, thick, fill=orange!10, aspect=2, inner sep=2pt, font=\small, align=center},
+    hash/.style={trapezium, draw=purple!80!black, thick, fill=purple!10, shape border rotate=270, align=center, minimum width=2cm}
+}
+
+\definecolor{kiemelt}{HTML}{0078A8}
+\newcommand{\kiemeles}[1]{\textcolor{kiemelt}{\textbf{#1}}}
+
+% Tételstílusok
+\newtheoremstyle{tetelstilus}
+    {\topsep}
+    {\topsep}
+    {\itshape}
+    {}
+    {\bfseries}
+    {.}
+    {.5em}
+    {\thmname{#1}\thmnumber{ #2}\thmnote{ (\textbf{#3})}}
+\theoremstyle{tetelstilus}
+
+\newtheorem{defin}{Definíció}
+\newtheorem{tetel}{Tétel}
