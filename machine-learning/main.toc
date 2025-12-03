@@ -1,0 +1,82 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Vectors}{4}{}%
+\contentsline {subsection}{\numberline {1.1}Definition and Operations}{4}{}%
+\contentsline {subsection}{\numberline {1.2}Example}{4}{}%
+\contentsline {section}{\numberline {2}Matrices}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Matrix Multiplication}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Example}{5}{}%
+\contentsline {section}{\numberline {3}3. Determinants}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Definitions}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Example}{5}{}%
+\contentsline {section}{\numberline {4}4. Matrix Inversion}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Formula (2x2)}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Example}{6}{}%
+\contentsline {section}{\numberline {5}Gaussian Elimination}{6}{}%
+\contentsline {subsection}{\numberline {5.1}Example System}{6}{}%
+\contentsline {section}{\numberline {6}6. Eigenvalues and Eigenvectors}{6}{}%
+\contentsline {subsection}{\numberline {6.1}Algorithm}{6}{}%
+\contentsline {subsection}{\numberline {6.2}Example}{7}{}%
+\contentsline {section}{\numberline {7}Random Variables and Distributions}{7}{}%
+\contentsline {subsection}{\numberline {7.1}Discrete vs. Continuous}{7}{}%
+\contentsline {subsection}{\numberline {7.2}Probability Functions}{8}{}%
+\contentsline {subsection}{\numberline {7.3}Expected Value (Mean)}{8}{}%
+\contentsline {section}{\numberline {8}Common Distributions}{8}{}%
+\contentsline {subsection}{\numberline {8.1}Uniform Distribution}{8}{}%
+\contentsline {subsection}{\numberline {8.2}Normal (Gaussian) Distribution}{9}{}%
+\contentsline {section}{\numberline {9}Normal Equation (Normál Egyenlet)}{9}{}%
+\contentsline {section}{\numberline {10}1. Feature Normalization (Leírók Normalizálása)}{10}{}%
+\contentsline {subsection}{\numberline {10.1}Standardization (Z-score Normalization)}{10}{}%
+\contentsline {subsection}{\numberline {10.2}Min-Max Scaling}{11}{}%
+\contentsline {subsection}{\numberline {10.3}Normal Equation (Normál Egyenlet)}{11}{}%
+\contentsline {section}{\numberline {11}Probability Theory}{12}{}%
+\contentsline {subsection}{\numberline {11.1}Univariate Normal Distribution (Egyváltozós Normális Eloszlás)}{12}{}%
+\contentsline {subsection}{\numberline {11.2}Multivariate Normal Distribution (Többváltozós Normális Eloszlás)}{12}{}%
+\contentsline {section}{\numberline {12} Dimensionality Reduction}{12}{}%
+\contentsline {subsection}{\numberline {12.1}Principal Component Analysis (PCA)}{12}{}%
+\contentsline {section}{\numberline {13}Dimensionality Reduction}{13}{}%
+\contentsline {subsection}{\numberline {13.1}Principal Component Analysis (PCA)}{13}{}%
+\contentsline {subsubsection}{\numberline {13.1.1}Geometric Intuition}{13}{}%
+\contentsline {subsubsection}{\numberline {13.1.2}The Algorithm Steps}{13}{}%
+\contentsline {subsubsection}{\numberline {13.1.3}Choosing $k$ (Explained Variance)}{14}{}%
+\contentsline {section}{\numberline {14}Regression Analysis (Regresszió)}{14}{}%
+\contentsline {subsection}{\numberline {14.1}Linear Regression (Lineáris Regresszió)}{14}{}%
+\contentsline {subsubsection}{\numberline {14.1.1}Univariate (Egyváltozós)}{14}{}%
+\contentsline {subsubsection}{\numberline {14.1.2}Multivariate (Többváltozós)}{15}{}%
+\contentsline {subsubsection}{\numberline {14.1.3}Cost Function: Mean Squared Error (MSE)}{15}{}%
+\contentsline {subsection}{\numberline {14.2}Polynomial Regression (Polinomiális Regresszió)}{15}{}%
+\contentsline {subsection}{\numberline {14.3}Logistic Regression (Logisztikus Regresszió)}{15}{}%
+\contentsline {subsubsection}{\numberline {14.3.1}Cost Function: Binary Cross-Entropy (Log Loss)}{15}{}%
+\contentsline {section}{\numberline {15}Classification (Osztályozás)}{16}{}%
+\contentsline {subsection}{\numberline {15.1}Binary Classification (Bináris Osztályozás)}{16}{}%
+\contentsline {subsection}{\numberline {15.2}Multi-class Classification (Többosztályos Osztályozás)}{16}{}%
+\contentsline {paragraph}{One-vs-All (One-vs-Rest):}{16}{}%
+\contentsline {section}{\numberline {16}Regularization (Regularizáció)}{16}{}%
+\contentsline {subsection}{\numberline {16.1}Overfitting vs. Underfitting (Túlillesztés és Alulillesztés)}{16}{}%
+\contentsline {subsection}{\numberline {16.2}Regularized Regression (Regularizált Regresszió)}{17}{}%
+\contentsline {paragraph}{Ridge Regression (L2 Regularization):}{17}{}%
+\contentsline {paragraph}{Lasso Regression (L1 Regularization):}{17}{}%
+\contentsline {section}{\numberline {17}Neural Networks (Neurális Hálók)}{17}{}%
+\contentsline {subsection}{\numberline {17.1}Architecture}{17}{}%
+\contentsline {subsection}{\numberline {17.2}Cost Functions in Neural Networks}{18}{}%
+\contentsline {paragraph}{1. Regression Problems:}{18}{}%
+\contentsline {paragraph}{2. Classification Problems:}{18}{}%
+\contentsline {subsection}{\numberline {17.3}Optimization with Backpropagation (Optimalizáció Hiba-visszaterjesztéssel)}{18}{}%
+\contentsline {paragraph}{Steps:}{19}{}%
+\contentsline {section}{\numberline {18}Model Selection \& Diagnostics}{19}{}%
+\contentsline {subsection}{\numberline {18.1}Dataset Splitting (Adatbázisok)}{19}{}%
+\contentsline {subsection}{\numberline {18.2}Bias vs. Variance (Diagnosztika)}{19}{}%
+\contentsline {subsection}{\numberline {18.3}Learning Curves (Tanulógörbék)}{20}{}%
+\contentsline {section}{\numberline {19}Error Metrics for Skewed Classes (Egyenlőtlen osztályok)}{20}{}%
+\contentsline {subsection}{\numberline {19.1}Metrics}{20}{}%
+\contentsline {section}{\numberline {20}Recommender Systems (Ajánlórendszerek)}{21}{}%
+\contentsline {subsection}{\numberline {20.1}Problem Formulation}{21}{}%
+\contentsline {subsection}{\numberline {20.2}Collaborative Filtering (Low Rank Matrix Factorization)}{21}{}%
+\contentsline {section}{\numberline {21}Large Scale Machine Learning}{21}{}%
+\contentsline {subsection}{\numberline {21.1}Batch Gradient Descent (Standard)}{22}{}%
+\contentsline {subsection}{\numberline {21.2}Stochastic Gradient Descent (SGD)}{22}{}%
+\contentsline {subsection}{\numberline {21.3}Mini-batch Gradient Descent}{23}{}%
+\contentsline {subsection}{\numberline {21.4}Online Learning}{23}{}%
+\contentsline {subsection}{\numberline {21.5}Distributed Learning Architectures}{24}{}%
+\contentsline {subsubsection}{\numberline {21.5.1}Data Parallelism (Map-Reduce)}{24}{}%
+\contentsline {subsubsection}{\numberline {21.5.2}Model Parallelism}{24}{}%
+\contentsline {subsection}{\numberline {21.6}Pipeline Ceiling Analysis}{24}{}%
