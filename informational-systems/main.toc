@@ -1,0 +1,129 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Data Models and its Implementations}{5}{}%
+\contentsline {subsection}{\numberline {1.1}Conceptual Data Model}{5}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Characteristics}{5}{}%
+\contentsline {subsection}{\numberline {1.2}Representational Data Model}{5}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Characteristics}{6}{}%
+\contentsline {subsection}{\numberline {1.3}Physical Data Model}{6}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}Characteristics}{6}{}%
+\contentsline {section}{\numberline {2}Relational Model}{6}{}%
+\contentsline {subsection}{\numberline {2.1}Definition of the Relation}{8}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}The Other Definition}{8}{}%
+\contentsline {subsection}{\numberline {2.2}The NULL value}{8}{}%
+\contentsline {section}{\numberline {3}Integrity Constraints}{9}{}%
+\contentsline {subsection}{\numberline {3.1}Domain Constraint}{9}{}%
+\contentsline {subsection}{\numberline {3.2}Key Constrains}{9}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Superkey}{9}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Key}{9}{}%
+\contentsline {subsection}{\numberline {3.3}Entity Integrity Constarint (Egyedintegritasi megszoritas)}{10}{}%
+\contentsline {subsection}{\numberline {3.4}Referential Integrity Constraint (Hivatkozasintegritasi megszoritas)}{10}{}%
+\contentsline {subsection}{\numberline {3.5}Other Type of Constraints}{10}{}%
+\contentsline {section}{\numberline {4}Relational Database and Relational Database Schema}{10}{}%
+\contentsline {subsection}{\numberline {4.1}Operations on a Relation}{11}{}%
+\contentsline {subsection}{\numberline {4.2}ACID Properties}{11}{}%
+\contentsline {section}{\numberline {5}Object Relational Model}{11}{}%
+\contentsline {subsection}{\numberline {5.1}Weaknesses of RDBMS}{11}{}%
+\contentsline {subsection}{\numberline {5.2}ORDBMS}{12}{}%
+\contentsline {subsection}{\numberline {5.3}User Defined Type (UDT)}{12}{}%
+\contentsline {subsubsection}{\numberline {5.3.1}Distinct Type}{12}{}%
+\contentsline {subsection}{\numberline {5.4}Structured UDT}{13}{}%
+\contentsline {subsubsection}{\numberline {5.4.1}Viselkedés és szemantika}{13}{}%
+\contentsline {subsubsection}{\numberline {5.4.2}Öröklődés}{13}{}%
+\contentsline {subsubsection}{\numberline {5.4.3}Observer és Mutator metódusok}{13}{}%
+\contentsline {subsubsection}{\numberline {5.4.4}Konstruktorok}{14}{}%
+\contentsline {section}{\numberline {6}XML Databases}{14}{}%
+\contentsline {subsection}{\numberline {6.1}Key Characteristics}{14}{}%
+\contentsline {subsection}{\numberline {6.2}Data-Centric vs. Document-Centric}{14}{}%
+\contentsline {subsection}{\numberline {6.3}Database Architectures}{14}{}%
+\contentsline {subsubsection}{\numberline {6.3.1}1. XML-Enabled Databases (XEDB)}{14}{}%
+\contentsline {subsubsection}{\numberline {6.3.2}2. Native XML Databases (NXD)}{15}{}%
+\contentsline {subsection}{\numberline {6.4}Query Languages}{15}{}%
+\contentsline {subsubsection}{\numberline {6.4.1}XPath (XML Path Language)}{15}{}%
+\contentsline {subsubsection}{\numberline {6.4.2}XQuery}{16}{}%
+\contentsline {subsection}{\numberline {6.5}Summary comparison}{16}{}%
+\contentsline {section}{\numberline {7}NoSQL Databases}{16}{}%
+\contentsline {subsection}{\numberline {7.1}Aggregátum adatmodellek}{17}{}%
+\contentsline {subsubsection}{\numberline {7.1.1}Előnyei}{19}{}%
+\contentsline {subsubsection}{\numberline {7.1.2}Hátrányai}{19}{}%
+\contentsline {subsection}{\numberline {7.2}Kulcs- érték és dokumentum adatmodellek}{19}{}%
+\contentsline {subsection}{\numberline {7.3}Oszlopcsalád tárak}{20}{}%
+\contentsline {subsection}{\numberline {7.4}Gráf adatbázisok}{21}{}%
+\contentsline {subsection}{\numberline {7.5}Sémamentes adatbázisok}{22}{}%
+\contentsline {subsection}{\numberline {7.6}Elosztási modellek}{23}{}%
+\contentsline {subsubsection}{\numberline {7.6.1}Sharding}{23}{}%
+\contentsline {subsubsection}{\numberline {7.6.2}Master-Slave replikáció}{24}{}%
+\contentsline {subsubsection}{\numberline {7.6.3}Peer-to-Peer replikáció}{25}{}%
+\contentsline {subsubsection}{\numberline {7.6.4}A sharding és a replikáció kombinációja}{25}{}%
+\contentsline {subsubsection}{\numberline {7.6.5}Konzisztencia}{25}{}%
+\contentsline {section}{\numberline {8}ER Model}{28}{}%
+\contentsline {subsection}{\numberline {8.1}Egyed}{29}{}%
+\contentsline {subsection}{\numberline {8.2}Attribútumok}{29}{}%
+\contentsline {subsubsection}{\numberline {8.2.1}Egyedtípus}{29}{}%
+\contentsline {subsubsection}{\numberline {8.2.2}Azonosító}{29}{}%
+\contentsline {subsubsection}{\numberline {8.2.3}Értékhalmaz (vagy értéktartomány)}{29}{}%
+\contentsline {subsubsection}{\numberline {8.2.4}Kapcsolat}{29}{}%
+\contentsline {subsubsection}{\numberline {8.2.5}Bináris kapcsolattípusok strukturális megszorításai}{30}{}%
+\contentsline {subsection}{\numberline {8.3}Gyenge egyedtípusok}{30}{}%
+\contentsline {section}{\numberline {9}ER to Relational}{31}{}%
+\contentsline {section}{\numberline {10}EER Model}{33}{}%
+\contentsline {subsection}{\numberline {10.1}Alosztály, szuperosztály, és öröklődés}{33}{}%
+\contentsline {subsubsection}{\numberline {10.1.1}Típus öröklődés}{33}{}%
+\contentsline {subsection}{\numberline {10.2}Specializáció}{34}{}%
+\contentsline {subsubsection}{\numberline {10.2.1}Generalizáció}{34}{}%
+\contentsline {subsubsection}{\numberline {10.2.2}A specializáció és generalizáció megszorításai}{35}{}%
+\contentsline {subsubsection}{\numberline {10.2.3}Uniótípus modellezése kategóriák használatával}{35}{}%
+\contentsline {section}{\numberline {11}EER modell leképezése relációs modellre}{36}{}%
+\contentsline {section}{\numberline {12}Normal Forms}{37}{}%
+\contentsline {subsection}{\numberline {12.1}A funkcionális függés definíciója}{37}{}%
+\contentsline {subsection}{\numberline {12.2}A funkcionális függés tulajdonságai}{38}{}%
+\contentsline {subsection}{\numberline {12.3}Lezárt}{38}{}%
+\contentsline {subsection}{\numberline {12.4}Armstrong axióma}{38}{}%
+\contentsline {subsection}{\numberline {12.5}Első Normálforma}{38}{}%
+\contentsline {subsection}{\numberline {12.6}Részleges függés}{39}{}%
+\contentsline {subsection}{\numberline {12.7}Második Normálforma}{39}{}%
+\contentsline {subsection}{\numberline {12.8}Tranzitív függés}{39}{}%
+\contentsline {subsection}{\numberline {12.9}Harmadik Normálforma}{39}{}%
+\contentsline {subsection}{\numberline {12.10}Boyce-Codd Normálforma}{40}{}%
+\contentsline {subsection}{\numberline {12.11}Többértékű függés}{40}{}%
+\contentsline {subsection}{\numberline {12.12}Negyedik normálforma (4NF)}{41}{}%
+\contentsline {section}{\numberline {13}UML}{41}{}%
+\contentsline {subsection}{\numberline {13.1}Interaction models}{41}{}%
+\contentsline {subsubsection}{\numberline {13.1.1}Use case modeling}{41}{}%
+\contentsline {subsubsection}{\numberline {13.1.2}Sequence diagrams}{42}{}%
+\contentsline {subsubsection}{\numberline {13.1.3}Class Diagrams}{43}{}%
+\contentsline {subsubsection}{\numberline {13.1.4}Behavioral models}{47}{}%
+\contentsline {section}{\numberline {14}Query Optimization}{48}{}%
+\contentsline {subsection}{\numberline {14.1}SQL Processing}{48}{}%
+\contentsline {subsubsection}{\numberline {14.1.1}SQL Parsing}{48}{}%
+\contentsline {subsubsection}{\numberline {14.1.2}SQL Optimization}{49}{}%
+\contentsline {subsubsection}{\numberline {14.1.3}SQL Row Source Generation}{49}{}%
+\contentsline {subsubsection}{\numberline {14.1.4}SQL Execution}{50}{}%
+\contentsline {subsection}{\numberline {14.2}Query Optimizer Concepts}{50}{}%
+\contentsline {subsubsection}{\numberline {14.2.1}Cost-Based Optimization}{51}{}%
+\contentsline {subsubsection}{\numberline {14.2.2}Execution Plans}{51}{}%
+\contentsline {subsection}{\numberline {14.3}Optimizer Components}{52}{}%
+\contentsline {subsubsection}{\numberline {14.3.1}Query Transformer}{52}{}%
+\contentsline {subsubsection}{\numberline {14.3.2}Query Transformer}{52}{}%
+\contentsline {subsubsection}{\numberline {14.3.3}Estimator}{53}{}%
+\contentsline {subsubsection}{\numberline {14.3.4}Plan Generator}{53}{}%
+\contentsline {subsection}{\numberline {14.4}Query Transformations}{54}{}%
+\contentsline {subsubsection}{\numberline {14.4.1}OR Expansion}{54}{}%
+\contentsline {subsubsection}{\numberline {14.4.2}View Merging}{54}{}%
+\contentsline {subsubsection}{\numberline {14.4.3}Predicate Pusing}{56}{}%
+\contentsline {subsubsection}{\numberline {14.4.4}Join Factorization}{56}{}%
+\contentsline {subsection}{\numberline {14.5}SQL Operators: Access Paths and Joins}{57}{}%
+\contentsline {subsubsection}{\numberline {14.5.1}Table Access Paths}{57}{}%
+\contentsline {subsection}{\numberline {14.6}Optimizer Controls}{60}{}%
+\contentsline {section}{\numberline {15}Software development}{60}{}%
+\contentsline {subsection}{\numberline {15.1}Software process models}{61}{}%
+\contentsline {subsubsection}{\numberline {15.1.1}The waterfall model}{61}{}%
+\contentsline {subsubsection}{\numberline {15.1.2}Incremental development}{62}{}%
+\contentsline {subsubsection}{\numberline {15.1.3}Reuse-oriented software engineering}{63}{}%
+\contentsline {subsection}{\numberline {15.2}Process activities}{64}{}%
+\contentsline {section}{\numberline {16}Architectural Design}{64}{}%
+\contentsline {subsection}{\numberline {16.1}Architectural Patterns}{65}{}%
+\contentsline {subsubsection}{\numberline {16.1.1}Layered Architecture}{65}{}%
+\contentsline {subsubsection}{\numberline {16.1.2}Repository Architecture}{67}{}%
+\contentsline {subsubsection}{\numberline {16.1.3}Client-server Architecture}{68}{}%
+\contentsline {subsubsection}{\numberline {16.1.4}Pipe and filter architecture (Event-Driven)}{68}{}%
+\contentsline {subsubsection}{\numberline {16.1.5}MVC Pattern}{69}{}%

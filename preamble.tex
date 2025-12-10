@@ -14,6 +14,44 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
 
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{listings}
+
+\lstdefinestyle{sqlcode}{
+    language=SQL,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue!70!black}\bfseries,
+    stringstyle=\color{green!40!black},
+    commentstyle=\color{gray},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=8pt,
+    frame=single,
+    framerule=0.4pt,
+    rulecolor=\color{black!30},
+    tabsize=2,
+    showstringspaces=false,
+    breaklines=true,
+    breakatwhitespace=true
+}
+
+\lstdefinelanguage{JSON}{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue!70!black},
+    stringstyle=\color{green!40!black},
+    commentstyle=\color{gray},
+    morestring=[b]",
+    morecomment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morekeywords={true,false,null},
+    sensitive=false,
+    showstringspaces=false
+}
+\usepackage{listings}
+\usepackage{xcolor}
+
 \usetikzlibrary{calc, positioning, arrows.meta, shapes.geometric, fit, matrix}
 
 \tikzset{
