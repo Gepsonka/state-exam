@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.20)  10 DEC 2025 17:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.20)  10 DEC 2025 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -480,16 +480,40 @@ File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
- (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen307
+\ar@mcellbox=\box70
+\extrarowheight=\dimen308
+\NC@list=\toks51
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box71
+)
+\TX@col@width=\dimen309
+\TX@old@table=\dimen310
+\TX@old@col=\dimen311
+\TX@target=\dimen312
+\TX@delta=\dimen313
+\TX@cols=\count331
+\TX@ftn=\toks52
+) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks53
+\minrowclearance=\skip59
+\rownum=\count332
+) (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen307
-\pgfarrowlength=\dimen308
-\pgfarrowwidth=\dimen309
-\pgfarrowlinewidth=\dimen310
+\pgfarrowinset=\dimen314
+\pgfarrowlength=\dimen315
+\pgfarrowwidth=\dimen316
+\pgfarrowlinewidth=\dimen317
 ) (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
@@ -499,13 +523,13 @@ File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\c@defin=\count331
+\c@defin=\count333
 )
-\c@tetel=\count332
+\c@tetel=\count334
  (/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count333
-\l__pdf_internal_box=\box70
+\l__color_backend_stack_int=\count335
+\l__pdf_internal_box=\box72
 ) (./main.aux
 
 LaTeX Warning: Label `lst:shoe-size-type' multiply defined.
@@ -564,17 +588,17 @@ LaTeX Font Info:    ... okay on input line 12.
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count334
-\scratchdimen=\dimen311
-\scratchbox=\box71
-\nofMPsegments=\count335
-\nofMParguments=\count336
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count337
-\MPscratchDim=\dimen312
-\MPnumerator=\count338
-\makeMPintoPDFobject=\count339
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count336
+\scratchdimen=\dimen318
+\scratchbox=\box73
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen319
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks55
 ) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -587,7 +611,7 @@ Package caption Info: End \AtBeginDocument code.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-\c@lstlisting=\count340
+\c@lstlisting=\count342
 LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -682,7 +706,7 @@ File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 
 [15]
 Underfull \hbox (badness 10000) in paragraph at lines 633--633
-[]\T1/cmr/m/n/12 Referential In-tegrity
+[]|\T1/cmr/m/n/12 Referential In-tegrity
  []
 
 
@@ -728,7 +752,7 @@ Underfull \hbox (badness 2111) in paragraph at lines 857--858
 
 
 Underfull \hbox (badness 1242) in paragraph at lines 860--860
-[]$\OMS/cmsy/m/n/12 ^^O$ \T1/cmr/m/n/12 Egy ag-gregá-tu-mot csak a kulc-sán
+[]|$\OMS/cmsy/m/n/12 ^^O$ \T1/cmr/m/n/12 Egy ag-gregá-tu-mot csak a kulc-sán
  []
 
 
@@ -1122,7 +1146,143 @@ Package pdftex.def Info: mvc_pattern.png  used on input line 3703.
 
 [69 <./mvc_pattern.png>]
 
-[70] (./main.aux)
+[70]
+
+[71]
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 Megjósolható, is-
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 Ad hoc, nem struk-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 A m¶ködés-nek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 Az el-emzési prob-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 Tranzakciókra op-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 Összetett
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3927
+\T1/cmr/m/n/12 lekérdezésekre op-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 Közepest®l az alac-
+ []
+
+
+Underfull \hbox (badness 4582) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 Olvasás, in-sert, up-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 A tel-jes rend-sz-ert
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3927
+[]|\T1/cmr/m/n/12 Csillagséma, hópe-
+ []
+
+
+
+[72]
+
+[73]
+Overfull \hbox (0.46149pt too wide) in paragraph at lines 3960--3963
+[]\T1/cmr/m/it/12 Triggerelt kivona-tolás\T1/cmr/m/n/12 : az egyes es-eményekhez trig-gereket definiálunk, ame-
+ []
+
+
+Overfull \hbox (3.35336pt too wide) in paragraph at lines 4001--4004
+[]\T1/cmr/bx/n/12 Aggregációt\T1/cmr/m/n/12 : Összegzi az adat-for-rás-ból kapott ada-tokat az adat-tárház-nak megfelel®
+ []
+
+
+
+[74]
+Overfull \hbox (0.84296pt too wide) in paragraph at lines 4043--4046
+[]\T1/cmr/bx/n/12 szabványosítás (stan-dard-iz-ing)\T1/cmr/m/n/12 : Egységes jelölés bevezetése, például lakcímeknél
+ []
+
+
+
+[75]
+<multidimensional_model.png, id=311, 548.0475pt x 425.59pt>
+File: multidimensional_model.png Graphic file (type png)
+<use multidimensional_model.png>
+Package pdftex.def Info: multidimensional_model.png  used on input line 4105.
+(pdftex.def)             Requested size: 455.24411pt x 353.53183pt.
+<dimension_table.png, id=312, 733.74126pt x 566.115pt>
+File: dimension_table.png Graphic file (type png)
+<use dimension_table.png>
+Package pdftex.def Info: dimension_table.png  used on input line 4124.
+(pdftex.def)             Requested size: 455.24411pt x 351.24681pt.
+
+
+[76 <./multidimensional_model.png>]
+<fact_table.png, id=317, 751.80875pt x 578.16pt>
+File: fact_table.png Graphic file (type png)
+<use fact_table.png>
+Package pdftex.def Info: fact_table.png  used on input line 4130.
+(pdftex.def)             Requested size: 455.24411pt x 350.10106pt.
+
+
+[77 <./dimension_table.png>]
+<star_scheme.png, id=322, 600.2425pt x 539.01375pt>
+File: star_scheme.png Graphic file (type png)
+<use star_scheme.png>
+Package pdftex.def Info: star_scheme.png  used on input line 4164.
+(pdftex.def)             Requested size: 455.24411pt x 408.81578pt.
+
+
+[78 <./fact_table.png>]
+<snowflake_scheme.png, id=327, 690.58pt x 292.09125pt>
+File: snowflake_scheme.png Graphic file (type png)
+<use snowflake_scheme.png>
+Package pdftex.def Info: snowflake_scheme.png  used on input line 4177.
+(pdftex.def)             Requested size: 455.24411pt x 192.5535pt.
+
+
+[79 <./star_scheme.png> <./snowflake_scheme.png>]
+Overfull \hbox (8.44112pt too wide) in paragraph at lines 4182--4186
+[]\T1/cmr/m/n/12 Ténytáblák hal-maza, ame-lyek ugyanaz(oka)t a di-men-z-iótáblákat használják (nem feltétlenül
+ []
+
+<fact_constellation.png, id=334, 666.49pt x 551.05875pt>
+File: fact_constellation.png Graphic file (type png)
+<use fact_constellation.png>
+Package pdftex.def Info: fact_constellation.png  used on input line 4190.
+(pdftex.def)             Requested size: 455.24411pt x 376.40508pt.
+
+Overfull \hbox (13.19908pt too wide) in paragraph at lines 4212--4216
+\T1/cmr/m/n/12 Pl. ter-mék ren-delés: a sor-ban a lépések van-nak: ren-del, cso-magol, kiszál-lít, megérkezik,
+ []
+
+
+
+[80 <./fact_constellation.png>]
+
+[81] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1133,18 +1293,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30351 strings out of 474662
- 732668 string characters out of 5751109
- 1419488 words of memory out of 5000000
- 52913 multiletter control sequences out of 15000+600000
+ 30621 strings out of 474662
+ 737296 string characters out of 5751109
+ 1422917 words of memory out of 5000000
+ 53173 multiletter control sequences out of 15000+600000
  576206 words of font info for 80 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 107i,11n,110p,819b,1731s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,12n,110p,819b,1731s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </Users/macbook/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (70 pages, 5833165 bytes).
+Output written on main.pdf (81 pages, 7167906 bytes).
 PDF statistics:
- 878 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
+ 943 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

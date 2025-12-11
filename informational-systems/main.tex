@@ -3729,4 +3729,513 @@ data model and interactions are simple.
 \end{itemize}
 
 
+
+
+\section{Adattárház és OLAP}
+
+\subsection{Az adattárház célja}
+
+A tradicionális adatbázisok nem lekérdezésekre vannak
+optimalizálva. Biztosítaniuk kell az adatok integritását az
+adatmódosítások esetén.
+
+Az adattárház felhasználói legtöbbször olvasni szeretnék az
+adatokat, és nagymennyiségű adat gyors elérésére van
+szükségük.
+
+Az adattárház elemzésekhez szükséges adatok több
+adatforrásából származnak. Ezek az elemzések többször
+ismétlődnek illetve megjósolhatóak.
+
+Nagy szükség van olyan eszközökre, amelyek ellátják a
+döntéshozókat olyan historikus adatokon alapuló információval,
+amelyek alapján gyorsan és megbízható döntést lehet hozni.
+
+Ezeket a funkcionalitásokat támogatja az adattárház és az
+OLAP (Online analytical processing)
+
+
+Az adattárházak elsősorban a döntéshozást dámogatják.
+
+Nagymennyiségű adat gyors olvasását támogatja
+
+\subsection{Definíció}
+
+
+Az adattárház egy tárgyorientált, integrált, az
+adatok történetiségét tároló, nem illékony
+adatrendszer, amelynek fő célja az adatokból
+történő hatékony információkinyerés biztosítása,
+elsősorban a döntéshozatali folyamatok
+támogatása céljából.
+
+
+
+\subsubsection{tárgyorientált, tematikus (subject-oriented)}
+
+
+Azt jelenti, hogy az adattárház a döntéshozók
+elemzési követelményeire fókuszál a
+döntéshozatal különböző szintjein, azaz különböző
+témákra, mint eladás, ügyfélviselkedés.
+
+Ezzel szemben az alkalmazások által
+végrehajtandó funkciókra való fókusz áll, azaz a
+funkcióorientáltság. Például egy eladás
+regisztrálása.
+
+\subsubsection{integrált}
+
+Az adattárház heterogén adatforrásokból dolgozik, de
+ahhoz, hogy az adatokat át tudja venni, egy
+szabványos formára kell alakítania, egységbe
+rendezve egy helyre kell gyűjtenie. Az egységes
+megközelítés konkrétan egyetlen kulcsstruktúrát és
+egyetlen adatmegjelenítési módot jelent
+
+
+Az integráltság azt is jelenti, hogy az adattárháznak fel
+kell tudnia ismerni, hogy ugyanarról az adatról van szó,
+(bár más jelöléssel és más formátummal érkeznek), és
+meg kell tudni állapodni egy egységes jelölésben.
+
+
+\subsubsection{nem illékony, vagyis tartós (non-volatile)}
+
+Az adattárházba bevitt adatok csak akkor tűnnek
+el, ha explicit módon töröljük őket. A bekerült
+adatok tehát tartósan meg is maradnak (akár 5-10
+évig). Megvan minden pillanatfelvétel (egy idő
+bélyeggel ellátva) visszamenőleg egészen addig,
+míg bizonyos adatokat nem archiválunk, vagy
+végképp eltávolítunk az adattárházból. (Éppen
+ezért nem szokás gyorsan érvénytelenné váló
+adatokat bevinni az adattárházba.)
+
+
+\subsubsection{idő függő (time-variant)}
+
+
+A forrásrendszerek adatai nagyrészt az aktuális állapotra
+vonatkoznak, a jelen pillanatra.
+
+Az adattárház adatai történeti adatokat (historical data), több éves
+tevékenységeket fog át. Az adatokat az időpontok és
+időintervallumok szerint tárolják és kezelik, a forrásrendszerek
+változását nyomon követve.
+
+Az igazi különbség az időbeliséget hordozó, és a hagyományos
+adatbázis rekordok között az, hogy míg a hagyományos
+rekordban módosítunk, törlünk, addig az új rekord adattárházba
+való betöltésekor az a pillanat is feljegyzésre kerül, amikor ez
+megtörtént. Az adattárházba egyszer bekerült adat általában már
+nem módosul, ugyanis ugyanannak az adatnak a módosítása
+időben később történik, így az adattárházba is egy másik
+időbélyeggel kerül be, egy új rekordba.
+
+
+\textbf{Adatok szemcsézettsége}
+
+
+A adatok szemcsézettsége az adatelemek
+összegzésének szintjét adja meg.
+
+
+Az adatelemek milyen részletezettségi szinten
+jelennek meg.
+
+Alacsony a szemcsézettség, ha több részleg
+megjeleníthető.
+
+
+Magas a szemcsézettség szintje, ha sok az
+összegzett adat.
+
+Az adattárházak a következő alkalmazásokat támogatják:
+
+\begin{itemize}
+  \item \textbf{OLAP (Online Analytical Processing)} az adattárházban lévő
+komplex adatok elemzését végezhetjük vele.
+
+  \item \textbf{DSS (Decision Support Systems)} más néven EIS
+(Executive Information Systems) a szervezet vezető
+döntéshozóit támogatja, hogy összetett és fontos
+döntéseket hozhassak meg.
+
+
+  \item \textbf{Data Mining (adatbányászat)} tudásfeltárásra használják,
+azaz előre nem látott új tudást keresését jelenti.
+\end{itemize}
+
+
+Hagyományos adatbázis:
+
+\begin{itemize}
+  \item Tranzakciós (insert, update, delete, select)
+  \item OLTP (Online Transactional Processing)
+  \item Olyan lekérdezésekre optimalizálták, amelyek csak egy pár
+sort érintenek, és olyan tranzakciókra optimalizálták,
+amelyek pár sort módosítnak az adatbázisban.
+\end{itemize}
+
+
+Adattárház:
+
+\begin{itemize}
+  \item Arra tervezték, hogy hatékonyan támogassa a kinyerést
+(extract), a feldolgozást és a megjelenítést. A célja az
+elemzés és a döntéshozás.
+  \item Több adatforrásból származó nagymennyiségű adatot
+tartalmaz. Az adatforrások független rendszerek lehetnek,
+más-más platformon, az adatmodelljük más-más lehet, és
+akár egyszerű állományok is lehetnek
+\end{itemize}
+
+
+\arrayrulecolor{gridwhite}
+\setlength{\arrayrulewidth}{1.5pt}
+\renewcommand{\arraystretch}{1.5} % Add vertical padding to rows
+
+\begin{tabularx}{\textwidth}{|>{\columncolor{bodygreen}\bfseries}l|
+                              >{\columncolor{bodygreen}}X|
+                              >{\columncolor{bodygreen}}X|}
+    \hline
+    \rowcolor{headergreen}
+    \textbf{Szempont} & \textbf{Hagyományos adatbázis} & \textbf{Adattárház} \\ \hline
+    
+    Felhasználó típusa & Irodai dolgozó & Vezető, döntéshozó \\ \hline
+    Használat & Megjósolható, ismétlődő & Ad hoc, nem strukturált \\ \hline
+    Adattartalom & Aktuális, részletes & Történeti, összegzett \\ \hline
+    Adatok szervezése & A működésnek megfelelően & Az elemzési problémáknak megfelelően \\ \hline
+    Adatstruktúra & Tranzakciókra optimalizált & Összetett lekérdezésekre optimalizált \\ \hline
+    Használat gyakorisága & Magas & Közepestől az alacsonyig \\ \hline
+    Elérés módja & Olvasás, insert, update, delete & Olvasás és hozzáfűzés (append) \\ \hline
+    Egy elérés hány rekordot érint & Keveset (10 sor) & Sokat (millió sort) \\ \hline
+    Válasz idő & Rövid & Lehet hosszú \\ \hline
+    Tervezés és megvalósítás & A teljes rendszert egyidőben & Inkrementális \\ \hline
+    
+    % Data from the second screenshot starts here
+    Adatmodell & Relációs, normalizált & Csillagséma, hópehelyséma \\ \hline
+    Orientáció & Tranzakció & Elemzés \\ \hline
+    Funkció & Napi műveletek & Döntés támogatás \\ \hline
+    Felhasználók száma & Sok (ezer) & Kevés (száz) \\ \hline
+    Adatbázis mérete & Néhány GB & 100 GB-től több TB-ig \\ \hline
+    Párhuzamossági szint & Magas & Alacsony \\ \hline
+    Módosítás gyakorisága & Magas & Nincs módosítás \\ \hline
+    Adatredundancia & Alacsony & Magas \\ \hline
+
+\end{tabularx}
+
+
+\subsection{ETL}
+
+
+\subsubsection{Extract}
+
+Adatokat gyűjt több, heterogén adatforrásból. Az
+adatforrások lehetnek hagyományos adatbázisok vagy
+különböző formátumú állományok.
+
+\textbf{Kivonatolási technikák}
+
+\begin{itemize}
+  \item \textbf{Statikus kivonatolásról (static capture)}: az időtényező nem játszik szerepet a
+megszerzendő adatok kiválasztásában. Ilyen
+például az adattárház létrehozásakor végbemenő
+első kivonatolás, illetve minden olyan eset, mikor a
+szükséges adatainkról (mindről, attól függetlenül,
+hogy az eltelt időben változott-e) egy teljes
+pillanatfelvétel készül.
+
+  \item \textbf{inkrementális kivonatolási módszereknek
+(incremental capture)}: 
+  \begin{itemize}
+    \item \textit{Azonnali}: Az forrásadatot azonnal kivonatolják, miután a változás
+megtörtént rajta.
+
+    \begin{itemize}
+      \item \textit{Alkalmazás-támogatott kivonatolás}: a kivonás annak az alkalmazásnak a feladata, amely az
+operatív adatot megváltoztatja.
+
+      \item \textit{Triggerelt kivonatolás}: az egyes eseményekhez triggereket definiálunk, amelyek
+végrehajtják és továbbítják a szükséges kivonást az
+adattárház felé.
+
+      \item \textit{Naplózott kivonatolás}: A napló kivonatoló eszköznek nagyon oda kell figyelnie arra,
+hogy megfelelően kezelje a commitokat és a rollback-eket. Az
+adattárházba ugyanis csak a véglegesített változások
+eredményének kell eljutnia. A naplórekordok elemzése egy másik gépen is elvégezhető.
+Így a kivonatolás úgy végezhető, hogy közben védjük az
+operatív alkalmazás teljesítményét.
+    \end{itemize}
+
+    \item \textit{Elhalasztott}: Előredefiniált időben történik
+    
+    \begin{itemize}
+      \item \textit{Időbélyeg alapú kivonatolás}: A statikus kivonatolás egy speciális esete, események
+tekintetében. A forrásrekordoknak rendelkezniük kell egy időbélyeg tartalmú
+mezővel, ami alapján eldönthető, hogy mely rekordok
+változtak a legutóbbi kivonatolás óta.
+
+      \item \textit{Állomány-összehasonlításon alapuló
+kivonatolás}: Venni kell az adatok módosítás előtti állapotát, és össze kell
+hasonlítani az adatok aktuális állapotával. Ehhez meg kell
+tartani a módosítás előtti másolatot az állományról.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+
+\subsubsection{Transform}
+
+
+A transzformáció tartalmaz:
+
+\begin{itemize}
+  \item \textbf{Tisztítást}: Eltávolítja a hibákat és az inkonzisztenciát az
+adatokból és átalakítja egy szabványos formára.
+
+  \item \textbf{Integrációt}: Összeegyezteti a különböző adatforrásokból
+származó adatokat séma és adatszinten
+
+  \item \textbf{Aggregációt}: Összegzi az adatforrásból kapott adatokat az
+adattárháznak megfelelő szemcsézettség,
+részletezettség szerint.
+\end{itemize}
+
+
+\textbf{Transzformálási módszerek}:
+
+\begin{itemize}
+  \item \textbf{Szelekció}: A rendelkezésre álló rekordból választ ki egy
+előzetes kritérium alapján néhány mezőt.
+
+  \item \textbf{Szeparálás/konkatenáció}: A szeparálás során az egy üzleti elemhez tartozó
+információt több különálló rekordra szedjük szét. A konkatenáció ennek az ellentéte, ez
+összekapcsolja az ugyanazon elemről szóló
+információkat.
+
+  \item \textbf{Normalizáció/denormalizáció}: A normalizáció egy input rekordot több output
+rekordba vág szét. A denormalizáció ennek az ellentétes művelete
+
+  \item \textbf{Aggregáció}: Részletezett adatokból állít elő egy összegző
+adathalmazt.
+
+  \item \textbf{Konverzió}: Mezőszinten dolgozik. Az adat formátumát
+változtatja.
+
+  \item \textbf{Dúsítás}: egy, vagy több input mezőt használ, hogy javítsa az
+adatok elérhetőségét vagy új mező(ke)t hozzon
+létre. Dúsítás egy rekord alapján: minden szükséges
+input információ egy mezőből érkezik. Dúsítás több rekord alapján: az input mezők több
+rekordból származhatnak.
+\end{itemize}
+
+\subsubsection{Adattisztítás}
+
+A tisztítás folyamatának a lépései:
+
+\begin{enumerate}
+  \item \textbf{Elemekre bontás (elementizing)}: Az adatok atomi részekre
+bontását jelenti. Ez egy cím esetén a város, irányítószám, utca,
+házszám, emeletszám, ajtószám elkülönítését jelenti.
+
+  \item \textbf{szabványosítás (standardizing)}: Egységes jelölés bevezetése,
+például lakcímeknél a krt, körút, és egyéb rövidítések egységes
+formára való hozása.
+
+  \item \textbf{verifikálás (verifying)}: A szabványosított elemek
+konzisztenciájának ellenőrzése. Lakcímeknél például az
+irányítószám és a város egyeztetése.
+
+  \item \textbf{illesztés (matching)}: Az illesztés során meg kell nézni, hogy az
+aktuálisan vizsgált rekord (vagy néhány mezője) szerepel-e más
+helyen a céladatbázisban és hogy tartalmában ugyanazon
+adatokat tartalmazza-e. A rendszer itt a tárolt adatok alapján
+bizonyos belső korrelációkat tár fel, és figyeli, hogy a bejövő
+adatok mennyire felelnek meg a feltárt szabályszerűségeknek.
+Ha egy adott nevű ügyfél már szerepel az adattárházban és egy
+rekordban újra találkozunk a nevével, leellenőrizhetjük, hogy a
+megfelelő lakcím, telefonszám, tartozik-e hozzá.
+
+  \item \textbf{dokumentálás (documenting)}: Természetesen, ha sikerült
+megtisztítanunk egy adatot, akkor ezt a folyamatot megfelelően
+dokumentálni kell, általában a metaadatok értelemszerű
+módosításával.
+\end{enumerate}
+
+
+\subsubsection{Load}
+
+\begin{itemize}
+  \item \textbf{Load}: Az egyszerű, teljes feltöltés során az új, bejövő
+adatokkal teljesen felülíródik az adathalmaz.
+
+  \item \textbf{Append}: Egy meglévő táblába tölti be az adatokat úgy, hogy
+az új adatokkal kiegészíti a táblát, miközben a
+régiek megmaradnak.
+
+  \item \textbf{Destruktív egyesítésről (destructive merge)}: akkor beszélünk, ha a meglévő adatokat egyesítjük
+a bejövőkkel olyan módon, hogy ha már létező
+kulcsú adat érkezik, az az új adatnak megfelelően
+módosul.
+  \item \textbf{A konstruktív egyesítés (constructive merge)}: ha már létező kulcsú adat érkezik, akkor a régi
+rekord egy jelzést kap, hogy érvénytelenné lett
+nyilvánítva, de nem íródik felül, továbbra is a
+tárházban marad.
+\end{itemize}
+
+
+\subsection{Adatmodellek az adattárházban}
+
+
+Az adattárházak multidimenziós mátrixokat,
+adatkockákat használnak.
+
+A több, mint három dimenziós adatokat nem
+könnyű megjeleníteni.
+
+Az adatok a dimenziók bármely kombinációjában
+közvetlenül elkérdezhetőek, elkerülve az összetett
+adatbázis lekérdezéseket.
+
+
+\begin{figure}[H]  % or [!htbp] if you’re fine with floating
+  \centering
+  \includegraphics[width=1\textwidth]{multidimensional_model.png} % adjust width/height as needed
+\end{figure}
+
+
+Multidimenziós séma használ:
+
+
+\begin{itemize}
+  \item \textbf{Dimenzió táblát}: Egy dimenzió attribútumainak sorait tárolja.
+  \item \textbf{Tény táblát}: Minden sor egy tárolt tény. A tény néhány megmért
+vagy megfigyelt változó értékét tartalmazza és
+mutatókat a dimenziótáblákra. A ténytábla az
+adatokat tartalmazza, a dimenziók azonosítják az
+adatsorokat.
+\end{itemize}
+
+
+\begin{figure}[H]  % or [!htbp] if you’re fine with floating
+  \centering
+  \includegraphics[width=1\textwidth]{dimension_table.png} % adjust width/height as needed
+\end{figure}
+
+
+\begin{figure}[H]  % or [!htbp] if you’re fine with floating
+  \centering
+  \includegraphics[width=1\textwidth]{fact_table.png} % adjust width/height as needed
+\end{figure}
+
+
+
+\subsubsection{Logikai adattárház terv}
+
+
+\begin{itemize}
+  \item \textbf{Relációs OLAP (ROLAP)}: Az adatokat relációs modellben tárolja. Kiterjesztett SQL-t és
+speciális elérési módszereket támogat.
+
+  \item \textbf{Multidimenziós OLAP (MOLAP)}: A szerverek közvetlenül multidimenziós adatokat tárolnak egy
+speciális adatstruktúrában. Megvalósítják az OLAP műveleteket
+ezen az adatstruktúrán. A MOLAP rendszerekben csak kevesebb
+adatot tárolhatunk, mint a ROLAP rendszerekben. A MOLAP
+rendszerek jobb teljesítményt biztosítanak amikor a
+multidimenziós adatokat lekérdezni vagy összegezni kell.
+
+  \item \textbf{Hibrid OLAP (HOLAP)}: A szerverek kombinálják a két technológiát hasznot húzva a
+ROLAP tárolási kapacitásából és a MOLAP feldolgó
+képességéből.
+
+\end{itemize}
+
+\subsubsection{Relációs multidimenziós sémák}
+
+\textbf{Csillag séma}
+
+Egy ténytáblából és az ahhoz kapcsolódó
+dimenziótáblákból áll
+
+\begin{figure}[H]  % or [!htbp] if you’re fine with floating
+  \centering
+  \includegraphics[width=1\textwidth]{star_scheme.png} % adjust width/height as needed
+\end{figure}
+
+
+\textbf{Hópehely séma}
+
+A csillag séma egy variációja, amelyben a
+dimenziótáblák normalizálva vannak, azaz
+hierarchiába vannak szervezve.
+
+
+\begin{figure}[H]  % or [!htbp] if you’re fine with floating
+  \centering
+  \includegraphics[width=1\textwidth]{snowflake_scheme.png} % adjust width/height as needed
+\end{figure}
+  
+\textbf{Galaxis séma (Fact Constellation)}
+
+Ténytáblák halmaza, amelyek ugyanaz(oka)t a
+dimenziótáblákat használják (nem feltétlenül
+mindet). A galaxis séma korlátozza a lehetséges
+lekérdezések számát.
+
+
+\begin{figure}[H]  % or [!htbp] if you’re fine with floating
+  \centering
+  \includegraphics[width=1\textwidth]{fact_constellation.png} % adjust width/height as needed
+\end{figure}
+
+\subsubsection{Multidimenziós séma}
+
+A dimenzió különböző szerepkörökkel többször is
+megjelenhet a ténytáblában pl. (megrendelés
+dátuma, szállítás dátuma)
+
+\subsubsection{Ténytábla}
+
+Három alapvető szemcsézettség
+
+\begin{itemize}
+  \item \textbf{Tranzakciós ténytábla}: Egy tranzakció egy sor vagy egy tranzakció egy bejegyzése
+egy sor. A legalacsonyabb szemcsézettségi szint
+
+  \item \textbf{Periódikus snapshot ténytábla}: Egy időintervallumban egy üzleti folyamatról több képet
+készítünk. Pl. a bankszámláról minden este elmentjük az
+egyenleget.
+
+
+  \item \textbf{Összegyűjtött (accumulating) snapshot ténytábla}: Egy folyamat (amelynek jól meghatározott eleje és vége van)
+tevékenységének a lépéseit egy sorban tárolja. Pl. termék
+rendelés: a sorban a lépések vannak: rendel, csomagol,
+kiszállít, megérkezik, fizet, stb.
+
+
+\end{itemize}
+
+
+
+\subsection{Egy adattárház funkcionalitásai}
+
+
+\begin{itemize}
+  \item \textbf{Felgörgetés (Roll-up)}: Az adatokat összegezzük a
+dimenziók alapján
+
+  \item \textbf{Lefúrás (Drill-Down)}: feltárjuk a részleteket
+  
+  \item \textbf{Pivot}: a kocka forgatása
+  
+  \item \textbf{Slice}: A kockában egy dimenzió kiválasztása
+  \item \textbf{Dice}: A kockában egy vagy több dimenzió kiválasztása
+  \item \textbf{Rendezés (Sorting)}
+  \item \textbf{Kiválasztás (Selection)}: Az adat elérhető érték vagy
+tartomány alapján.
+
+\end{itemize}
+
 \end{document}
